@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+    <section class="section">
+        <header>
+            <a href="#"><img src="images/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora modi impedit repellat commodi praesentium, aliquid, voluptates laborum ex obcaecati optio molestiae omnis repellendus vitae debitis cupiditate voluptate ad! Asperiores ab culpa eos magni voluptatibus enim quis quo modi hic, fuga distinctio, perspiciatis fugit sunt tenetur adipisci corrupti illum a dignissimos?</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/pepsi001.png" alt="Pepsi1" class="pepsi">
+            </div>
+        </div>
+        <div class="slider-thumb">
+            <li><img src="images/pepsi001.png" alt="pepsi1" onclick="imgSlider('pepsi001.png', '#0062be')"></li>
+            <li><img src="images/pepsi002.png" alt="pepsi2" onclick="imgSlider('pepsi002.png', '#e60c2c')"></li>
+            <li><img src="images/pepsi003.png" alt="pepsi3" onclick="imgSlider('pepsi003.png', '#1e1e1e')"></li>
+        </div>
+        <div class="social-icon">
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(imgName, color) {
+            document.querySelector('.pepsi').src = `images/${imgName}`;
+            document.querySelector('.section').style.background = color;
+        }
+    </script>
+</body>
+</html>
